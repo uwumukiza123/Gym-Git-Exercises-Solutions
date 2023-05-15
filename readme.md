@@ -262,3 +262,93 @@ nothing to commit, working tree clean
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (dev)
 $
 ```
+## Bundle 2
+
+### exercise 1
+
+```bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ touch service.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ ls
+about.html  home.html  readme.md  services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git add services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git stash
+Saved working directory and index state WIP on bundle-2: 4014905 adding exercise 2 on readme.md
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git stash pop
+On branch ft/bundle-2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   services.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Dropped refs/stash@{0} (fc2d64e3a0fcefa8bd42e740d8beb4e73c6b019e)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git add services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git commit -m 'creating and adding some changes in service page'
+[ft/bundle-2 6bb7f18] creating and adding some changes in service page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 524 bytes | 524.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
+$
+```
+
