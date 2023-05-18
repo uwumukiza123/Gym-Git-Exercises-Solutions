@@ -409,3 +409,102 @@ $
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
 $
 ```
+
+### exercise 2
+
+```Bash
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git add about.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git commit 'add new paragraph to about us page'
+error: pathspec 'add new paragraph to about us page' did not match any file(s) known to git
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git commit -m 'add new paragraph to about us page'
+[ft/footer 201aaac] add new paragraph to about us page
+ 1 file changed, 1 insertion(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git add about.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git commit -m 'add more pages on about us page'
+[ft/footer 0860c05] add more pages on about us page
+ 1 file changed, 1 insertion(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 868 bytes | 289.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 30582d0..0860c05
+Fast-forward
+Squash commit -- not updating HEAD
+ about.html | 2 ++
+ 1 file changed, 2 insertions(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/squashing)
+$ git commit -m 'footer changes squashing'
+[ft/squashing 9113e8f] footer changes squashing
+ 1 file changed, 2 insertions(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 500 bytes | 71.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/squashing)
+$
+```
