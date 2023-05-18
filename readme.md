@@ -352,3 +352,60 @@ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
 $
 ```
 
+## Bundle 4
+
+## Exercise 1
+
+```Bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git remote add git-copy https://github.com/uwumukiza123/gym-git-exercises-second-part.git
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git remote
+git-copy
+origin
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git add home.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git commit -m 'add home page'
+[main a68d96d] add home page
+ 1 file changed, 2 insertions(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+   b0901a7..a68d96d  main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git push git-copy
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (29/29), 5.94 KiB | 1.49 MiB/s, done.
+Total 29 (delta 13), reused 18 (delta 7), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/uwumukiza123/gym-git-exercises-second-part.git
+ * [new branch]      main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$
+```
