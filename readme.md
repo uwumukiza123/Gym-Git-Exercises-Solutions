@@ -352,3 +352,322 @@ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-exercises (ft/bundle-2)
 $
 ```
 
+## Bundle 3
+
+### Exercise 1
+
+```bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/service-redesign)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ touch team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git add team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git commit -m 'add team page to our html file'
+[ft/team-page edd31b3] add team page to our html file
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 497 bytes | 124.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git checkout ft/contact-page
+error: pathspec 'ft/contact-page' did not match any file(s) known to git
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$ git log
+commit edd31b3bbfe5c0faa1b3a568b5b9e62d8b2e1fcc (HEAD -> ft/team-page, origin/ftcommit edd31b3bbfe5c0faa1b3a568b5b9e62d8b2e1fcc (HEAD -> ft/team-page, origin/ft
+/team-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Wed May 17 12:49:40 2023 +0200
+
+    add team page to our html file
+
+commit 31dccd1fe050c6430d75d3dde8905dfe3bf93871 (origin/ft/service-redesign, ft/service-redesign)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue May 16 18:01:07 2023 +0200
+
+    add readme.md
+
+commit 4bc47f015311bf000eb2a2517493a220bddd4241
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue May 16 13:59:03 2023 +0200
+
+    add exercise2 on readme.md
+
+commit 5cf78c3497c12e2a24cacc02c6cb8f250f073155
+Merge: aa580d2 f3f17b7
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue May 16 13:42:53 2023 +0200
+
+    Merge branch 'main' into ft/service-redesign
+
+commit f3f17b713cd913967fb09f3eeb6a8567402fd77f (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue May 16 11:55:19 2023 +0200
+
+    adding changes in services page
+
+commit aa580d2985a71f8b920dfc7626941323222a173e
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue May 16 11:33:48 2023 +0200
+
+    adding some changes to services.html
+
+commit 69c5319962398dab944cba3f89a87a1c5f9d0742
+Merge: 75b7c27 85b1cfb
+Author: uwumukiza123 <113632531+uwumukiza123@users.noreply.github.com>
+Date:   Tue May 16 11:06:49 2023 +0200
+
+    Merge pull request #1 from uwumukiza123/ft/bundle-2
+
+    adding different pages to this project
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/team-page)
+$  git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git cherry-pick edd31b3bbfe5c0faa1b3a568b5b9e62d8b2e1fcc
+[ft/contact-page 969b9c0] add team page to our html file
+ Date: Wed May 17 12:49:40 2023 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git add contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git commit -m 'add new page to out html file'
+[ft/contact-page 672bc81] add new page to out html file
+ 1 file changed, 12 insertions(+)
+ create mode 100644 contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 780 bytes | 260.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ ls
+about.html  contact.html  fag.html  home.html  readme.md  services.html  team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git add faq.html
+fatal: pathspec 'faq.html' did not match any files
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ ls
+about.html  contact.html  faq.html  home.html  readme.md  services.html  team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ cd faq.html
+bash: cd: faq.html: Not a directory
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git add faq.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git commit -m 'add faq.html'
+[ft/faq-page 3217735] add faq.html
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 466 bytes | 466.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git revert edd31b3bbfe5c0faa1b3a568b5b9e62d8b2e1fcc
+[ft/faq-page 2e463c5] Revert "add team page to our html file"
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git add .
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 298 bytes | 298.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+   3217735..2e463c5  ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$
+```
+
+### exercise 2
+
+```Bash
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git add home.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git commit -m 'add contents in home.html'
+[main b0901a7] add contents in home.html
+ 1 file changed, 1 insertion(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 366 bytes | 91.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+   f3f17b7..b0901a7  main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git add home.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git commit -m 'merging this brach with main'
+[ft/home-page-redesign 4bb0b8c] merging this brach with main
+ 1 file changed, 2 insertions(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.55 KiB | 302.00 KiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/uwumukiza123/Gym-Git-Exercises-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (ft/home-page-redesign)
+$
+```
