@@ -520,3 +520,81 @@ To https://github.com/uwumukiza123/git-cafe-exercise.git
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (main)
 $
 ```
+
+## Bundle 6
+
+### exercise 1
+
+```Bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ ls
+about.html  index.html  readme.md  services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
+$ cd ..
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM
+$ ls
+ Gym-Git-Exercises-Solutions/  'THE GYM FIRST WEBSITE'/  'THE GYM PRACTICE'/   git-cafe-exercise/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM
+$ cd git-cafe-exercise/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (main)
+$ ls
+README.md  bat/  css/  images/  index-1.html  index-2.html  index-3.html  index-4.html  index.html  js/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (main)
+$ git checkout -b ft-branch
+Switched to a new branch 'ft-branch'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html
+bat/       images/  index-2.html  index-4.html  js/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ code .
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ ls
+README.md  bat/  css/  images/  index-1.html  index-2.html  index-3.html  index-4.html  index.html  js/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ git add .
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ git commit -m 'add menu page to our JS folder'
+[ft-branch e97a713] add menu page to our JS folder
+ 2 files changed, 27 insertions(+)
+ create mode 100644 .vscode/settings.json
+ create mode 100644 js/Menu.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ git status
+On branch ft-branch
+nothing to commit, working tree clean
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ git push origin ft-branch
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 755 bytes | 31.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft-branch' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git-cafe-exercise/pull/new/ft-branch
+remote:
+To https://github.com/uwumukiza123/git-cafe-exercise.git
+ * [new branch]      ft-branch -> ft-branch
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$
+```
