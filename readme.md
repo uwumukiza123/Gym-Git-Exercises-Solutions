@@ -598,3 +598,102 @@ To https://github.com/uwumukiza123/git-cafe-exercise.git
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
 $
 ```
+
+### Exercise 2
+
+```Bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (ft-branch)
+$ git checkout -b bug-fix-branch
+Switched to a new branch 'bug-fix-branch'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (bug-fix-branch)
+$ git add Contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (bug-fix-branch)
+$ git commit -m 'rename index-4.html file to contact.html'
+[bug-fix-branch 42c9b38] rename index-4.html file to contact.html
+ 1 file changed, 204 insertions(+)
+ create mode 100644 Contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (bug-fix-branch)
+$ git push
+fatal: The current branch bug-fix-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug-fix-branch
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (bug-fix-branch)
+$ git push --set-upstream origin bug-fix-branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.51 KiB | 428.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug-fix-branch' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git-cafe-exercise/pull/new/bug-fix-branch
+remote:
+To https://github.com/uwumukiza123/git-cafe-exercise.git
+ * [new branch]      bug-fix-branch -> bug-fix-branch
+branch 'bug-fix-branch' set up to track 'origin/bug-fix-branch'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (bug-fix-branch)
+```
+
+### exercise 3
+
+```Bash
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise/js (bug-fix-branch)
+$ git checkout -b contact-branch
+Switched to a new branch 'contact-branch'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise/js (contact-branch)
+$ ls
+Menu.html      html5shiv.js             jquery.equalheights.js      jquery.js                        jquery.rd-google-map.js            jquery.unveil.js  tmstickup.js
+TMForm.js      jquery-migrate-1.2.1.js  jquery.fancybox-buttons.js  jquery.mobile.customized.min.js  jquery.rd-parallax.js              modal.js          wow.js
+camera.js      jquery.cookie.js         jquery.fancybox-media.js    jquery.mobilemenu.js             jquery.simplr.smoothscroll.min.js  script.js
+device.min.js  jquery.easing.1.3.js     jquery.fancybox.js          jquery.mousewheel.min.js         jquery.ui.totop.js                 superfish.js
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise/js (contact-branch)
+$ cd ..
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (contact-branch)
+$ ls
+Contact.html  README.md  bat/  css/  images/  index-1.html  index-2.html  index-3.html  index.html  js/
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (contact-branch)
+$ git add Contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (contact-branch)
+$ git commit 'add contact changes to contact.html page'
+error: pathspec 'add contact changes to contact.html page' did not match any file(s) known to git
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (contact-branch)
+$ git commit -m 'add changes to contact.html page'
+[contact-branch edcaeac] add changes to contact.html page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/git-cafe-exercise (contact-branch)
+$ git push origin contact-branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 108.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'contact-branch' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git-cafe-exercise/pull/new/contact-branch
+remote:
+To https://github.com/uwumukiza123/git-cafe-exercise.git
+ * [new branch]      contact-branch -> contact-branch
+
+ABC@
+```
