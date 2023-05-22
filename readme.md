@@ -526,7 +526,6 @@ $
 ### exercise 1
 
 ```Bash
-
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/THE GYM/Gym-Git-Exercises-Solutions (main)
 $ ls
 about.html  index.html  readme.md  services.html
